@@ -1,0 +1,127 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* banner styles  */
+#banner{
+    background: #161616;
+    border-radius: 30px;
+    margin: 50px 140px;
+}
+.top-banner{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.banner-left, .banner-right{
+    width: 50%;
+}
+.banner-left{
+    padding: 100px;
+}
+.banner-right img{
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;
+    margin-right: 79px;
+}
+.banner-left h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: #FFFFFF;
+}
+.banner-left p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+.banner-left button{
+    background: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+.banner-left button:hover{
+    background: #FFFFFF;
+    color: #DD0000;
+}
+
+/* custom device design  */
+
+/* mobile divices  */
+@media only screen and (max-width:575px) {
+    /* banner styles  */
+    #banner{
+        margin: 44px 20px;
+    }
+    .top-banner{
+        flex-direction: column;
+    }
+    .banner-left, .banner-right{
+        width: 100%;
+    }
+    .banner-left{
+        margin-top:28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-left{
+        padding: 10px 0;
+    }
+    .banner-left h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .banner-left p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .banner-left button{
+        padding: 8px 12px;
+    }
+    .hide{
+        display: none;
+    }
+    .banner-right img{
+        height: 245px;
+        width: 233px;
+        margin-left: 68px;
+    }
+
+    
+}
+
+/* tablet  */
+@media only screen and (min-width:576px) and (max-width:991px){
+    /* banner styles  */
+    #banner{
+        margin: 50px 50px;
+    }
+    .banner-left h1{
+        font-size: 40px;
+    }
+    .banner-left p{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .banner-left button{
+        padding: 12px;
+    }
+    .banner-left .hide{
+        display: none;
+    }
+    .banner-right img{
+        width: 100%;
+    }
+    
+    
+}

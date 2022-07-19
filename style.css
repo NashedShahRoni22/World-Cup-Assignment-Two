@@ -54,6 +54,83 @@ body{
     color: #DD0000;
 }
 
+/* newsfeed styles  */
+#news-feed{
+    margin: 50px 140px;
+    display: flex;
+    gap: 24px;
+}
+.navigation-btn{
+    background: #161616;
+    border-radius: 10px;
+    height: 100%;
+}
+.navigation-btn ul{
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.navigation-btn ul a{
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn1{
+    background-color: #fff;
+    padding: 17px 39px;
+    border-radius: 10px;
+}
+.btn2{
+    background-color: #fff;
+    padding: 17px 79px;
+    border-radius: 10px;
+}
+.btn1 a, .btn2 a{
+    color: #161616;
+}
+.active{
+    background-color: #DD0000;
+    padding: 17px 103px;
+    border-radius: 10px;
+}
+.active a{
+    color: white;
+}
+.blog-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.card-banner img{
+    width: 100%;
+}
+.card-content{
+    margin: 20px;
+}
+.card-btn button{
+    padding: 4px 17px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+.card-btn p{
+    font-size: 18px;
+    font-weight: 600;
+    margin:15px 0 20px 0;
+}
+.card-info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 /* custom device design  */
 
 /* mobile divices  */
@@ -65,7 +142,7 @@ body{
     .top-banner{
         flex-direction: column;
     }
-    .banner-left, .banner-right{
+    .banner-left{
         width: 100%;
     }
     .banner-left{
@@ -94,8 +171,24 @@ body{
     .banner-right img{
         height: 245px;
         width: 233px;
-        margin-left: 68px;
         margin-top: -24px;
+    }
+    #news-feed{
+        flex-direction: column;
+    }
+    .navigation-btn ul{
+        background-color: #fff;
+    }
+    .btn1, .btn2, .active{
+        padding: 10px 50px;
+    }
+    .blog-cards{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .card{
+        width: 335px;
+        height: 388.69px;
     }
 
     
@@ -122,6 +215,22 @@ body{
     }
     .banner-right img{
         width: 100%;
+    }
+
+    /* news-feed-content  */
+    #news-feed{
+        flex-direction: column;
+        margin: 50px 50px;
+    }
+    .navigation-btn ul{
+        flex-direction: row;
+        background-color: #fff;
+    }
+    .btn1{
+        padding: 17px 28px;
+    }
+    .blog-cards{
+        grid-template-columns: repeat(2, 1fr);
     }
     
     

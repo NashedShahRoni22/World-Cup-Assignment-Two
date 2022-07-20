@@ -234,6 +234,35 @@ hr{
     border-radius: 10px;
     font-size: 20px;
 }
+.view-all-btn button:hover{
+    color: #DD0000;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* animation  */
+#ball-1{
+    position: absolute;
+    animation: ltr 5s linear infinite alternate;
+    animation-play-state: unset;
+    transition: transform .5s;
+}
+.animtated-ball img{
+    height: 50px;
+    width: 50px;
+}
+@keyframes ltr{
+    0%{
+        left: 5%;
+        top: 0;
+    }
+    100%{
+        left:80%;
+        top:0;
+        transform: rotate(180deg);   
+    }
+}
 /* custom device design  */
 
 /*

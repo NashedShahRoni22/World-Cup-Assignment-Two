@@ -131,7 +131,6 @@ body{
 .card-btn button:hover{
     background-color: #DD0000;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
     cursor: pointer;
 }
 .card-btn p{
@@ -141,6 +140,8 @@ body{
 }
 .card-info{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 .flag-cards{
@@ -260,10 +261,10 @@ hr{
     /* news feed styles  */
     #news-feed{
         flex-direction: column;
+        align-items: center;
     }
     .blog-navigation{
         background-color: #fff;
-        margin-left: -100px;
     }
     .blog-cards{
         grid-template-columns: repeat(1, 1fr);

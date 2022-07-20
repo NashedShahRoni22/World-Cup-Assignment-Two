@@ -276,6 +276,7 @@ hr{
     /* flag-cards  */
     .flag-cards{
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     /* footer styles  */
     .footer-content{

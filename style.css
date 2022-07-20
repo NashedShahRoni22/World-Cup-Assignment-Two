@@ -221,9 +221,28 @@ hr{
     background-color: #DD0000;
     color: #FFFFFF;
 }
+.view-all-btn{
+    position: relative;
+    margin: 20px auto;
+    display: none;
+}
+.view-all-btn button{
+    padding: 12px 30px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
 /* custom device design  */
 
-/* mobile divices  */
+/*
+---------------
+------------- 
+mobile divices
+---------------
+--------------
+  */
 @media only screen and (max-width:575px) {
     /* banner styles  */
     #banner{
@@ -312,7 +331,13 @@ hr{
     
 }
 
-/* tablet  */
+/*
+-----------
+----------- 
+tablet
+------------
+-----------
+  */
 @media only screen and (min-width:576px) and (max-width:991px){
     /* banner styles  */
     #banner{
@@ -360,6 +385,9 @@ hr{
     /* flag card  */
     .flag-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view-all-btn{
+        display: block;
     }
     
     

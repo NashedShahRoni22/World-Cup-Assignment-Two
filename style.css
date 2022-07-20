@@ -1,11 +1,9 @@
 /* google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+body{
     margin: 0;
     padding: 0;
-}
-body{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,6 +29,7 @@ body{
     height: 613px;
     margin-top: 33px;
     margin-right: 79px;
+    margin-bottom: -7%;
 }
 .banner-left h1{
     font-weight: 700;
@@ -141,7 +140,6 @@ body{
 .card-info{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
 }
 .flag-cards{
@@ -167,6 +165,13 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
+
+/* footer styles */
+.footer-content{
+    background-color: #161616;
+    padding: 50px 0;
+}
+
 .footer-content p{
     font-weight: 400;
     font-size: 16px;
@@ -174,10 +179,7 @@ body{
     color: #4D4D4D;
 }
 
-.footer-content{
-    height: 444px;
-    background-color: #161616;
-}
+
 .footer-content h1{
     font-weight: 600;
     font-size: 40px;
@@ -249,14 +251,16 @@ hr{
     }
     .banner-left button{
         padding: 8px 12px;
+        border: none;
     }
     .hide{
         display: none;
     }
     .banner-right img{
         height: 245px;
-        width: 233px;
+        width: 100%;
         margin-top: -24px;
+        margin-bottom: -3%;
     }
     /* news feed styles  */
     #news-feed{
@@ -280,9 +284,7 @@ hr{
         justify-content: center;
     }
     /* footer styles  */
-    .footer-content{
-        height: 100%;
-    }
+
     .footer-content .footer-links{
         flex-direction: column;
         align-items: center;
@@ -328,6 +330,7 @@ hr{
     }
     .banner-right img{
         width: 100%;
+        margin-bottom: -2%;
     }
 
     /* news-feed-content  */

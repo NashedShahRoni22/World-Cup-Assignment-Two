@@ -64,41 +64,35 @@ body{
     background: #161616;
     border-radius: 10px;
     height: 100%;
-}
-.navigation-btn ul{
+    align-items: center;
     padding: 30px;
-    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    gap: 60px;
 }
-.navigation-btn ul a{
+.navigation-btn .btn1 a{
     text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.btn1{
     background-color: #fff;
+    border-radius: 10px;
     padding: 17px 39px;
-    border-radius: 10px;
-}
-.btn2{
-    background-color: #fff;
-    padding: 17px 79px;
-    border-radius: 10px;
-}
-.btn1 a, .btn2 a{
     color: #161616;
 }
-.active{
-    background-color: #DD0000;
-    padding: 17px 103px;
+.navigation-btn .btn2 a{
+    text-decoration: none;
+    background-color: #fff;
     border-radius: 10px;
+    padding: 17px 72px;
+    color: #161616;
 }
-.active a{
-    color: white;
+.navigation-btn .active a{
+    text-decoration: none;
+    background-color: #DD0000;
+    border-radius: 10px;
+    padding: 17px 92px;
+    color: #FFFFFF;
 }
+
+
 .blog-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,6 +125,48 @@ body{
     align-items: center;
     gap: 30px;
 }
+.footer-content{
+    height: 444px;
+    background-color: #161616;
+}
+.footer-content h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 130px;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 0;
+}
+.footer-content .footer-links, .social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+.footer-content ul a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+}
+.social-icons{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.social-icons i{
+    font-size: 24px;
+    padding: 16px;
+    background-color: #fff;
+    color: #161616;
+    border-radius: 50%;
+}
+.social-icons i:hover{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
 /* custom device design  */
 
 /* mobile divices  */
@@ -146,7 +182,7 @@ body{
         width: 100%;
     }
     .banner-left{
-        margin-top:28px;
+        margin: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,14 +209,24 @@ body{
         width: 233px;
         margin-top: -24px;
     }
+    /* news feed styles  */
     #news-feed{
         flex-direction: column;
     }
-    .navigation-btn ul{
+    .navigation-btn{
         background-color: #fff;
+        gap: 20px;
     }
-    .btn1, .btn2, .active{
-        padding: 10px 50px;
+    .navigation-btn .btn1 a, .navigation-btn .btn2 a{
+        padding:8px 40px;
+    }
+    .navigation-btn .active a{
+        background-color: #DD0000;
+        padding: 8px 40px;
+        color: #FFFFFF;
+    }
+    .navigation-btn .btn1 a, .btn2 a{
+        border: 1px solid #161616;
     }
     .blog-cards{
         grid-template-columns: repeat(1, 1fr);
@@ -189,6 +235,27 @@ body{
     .card{
         width: 335px;
         height: 388.69px;
+    }
+
+    /* footer styles  */
+    .footer-content{
+        height: 100%;
+    }
+    .footer-content .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content h1{
+        padding-top: 24px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .footer-content ul a{
+        font-size: 14px;
+    }
+    .social-icons i{
+        font-size: 16px;
+        padding: 8px;
     }
 
     
@@ -221,16 +288,22 @@ body{
     #news-feed{
         flex-direction: column;
         margin: 50px 50px;
+        justify-content: center;
+        width: 100%;
     }
-    .navigation-btn ul{
+    .navigation-btn{
         flex-direction: row;
         background-color: #fff;
+        width: 100%;
     }
-    .btn1{
-        padding: 17px 28px;
+    .navigation-btn .btn1 a, .btn2 a{
+        border: 1px solid #161616;
     }
     .blog-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 357px;
     }
     
     

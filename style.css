@@ -9,9 +9,10 @@ body{
 
 /* banner styles  */
 #banner{
-    background: #161616;
     border-radius: 30px;
     margin: 50px 140px;
+    animation: banner 4s ease infinite alternate;
+    animation-play-state: unset;
 }
 .top-banner{
     display: flex;
@@ -241,26 +242,59 @@ hr{
     cursor: pointer;
 }
 
-/* animation  */
+/* ------------------
+---------------------
+animation  and transition
+------------------------
+-----------------------
+*/
+
+
+@keyframes banner{
+    from{
+        background-color: #161616;
+    }
+    to{
+        background-color: #0072dd;
+    }
+}
 #ball-1{
     position: absolute;
-    animation: ltr 5s linear infinite alternate;
+    animation: ttb 3s linear infinite alternate;
+    animation-play-state: unset;
+    transition: transform .5s;
+}
+#ball-2{
+    position: absolute;
+    animation: btt 3s linear infinite alternate;
     animation-play-state: unset;
     transition: transform .5s;
 }
 .animtated-ball img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
-@keyframes ltr{
+@keyframes ttb{
     0%{
-        left: 5%;
+        left:0;
         top: 0;
     }
     100%{
-        left:80%;
-        top:0;
-        transform: rotate(180deg);   
+        left:0;
+        top:100%;
+        transform: rotate(180deg);
+    }
+}
+@keyframes btt{
+    0%{
+        right:0;
+        bottom: 0;
+    }
+    100%{
+        right:0;
+        bottom: 90%;
+        transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 /* custom device design  */
@@ -274,6 +308,10 @@ mobile divices
   */
 @media only screen and (max-width:575px) {
     /* banner styles  */
+    .animtated-ball img{
+        height: 20px;
+        width: 20px;
+    }
     #banner{
         margin: 44px 20px;
     }
@@ -369,6 +407,10 @@ tablet
   */
 @media only screen and (min-width:576px) and (max-width:991px){
     /* banner styles  */
+    .animtated-ball img{
+        height: 60px;
+        width: 60px;
+    }
     #banner{
         margin: 50px 50px;
     }

@@ -83,6 +83,13 @@ body{
     border: none;
     border-radius: 10px;
 }
+.btn:hover{
+    background-color: #DD0000;
+    cursor: pointer;
+}
+.btn:hover a{
+    color: #fff;
+}
 .btn a{
     color: black;
 }
@@ -121,6 +128,12 @@ body{
     font-size: 16px;
     background-color: #fff;
 }
+.card-btn button:hover{
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
 .card-btn p{
     font-size: 18px;
     font-weight: 600;
@@ -128,9 +141,12 @@ body{
 }
 .card-info{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
+}
+.flag-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 .flag-card{
     display: flex;
@@ -257,6 +273,10 @@ hr{
         width: 335px;
         height: 388.69px;
     }
+    /* flag-cards  */
+    .flag-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
     /* footer styles  */
     .footer-content{
         height: 100%;
@@ -328,6 +348,11 @@ hr{
     }
     .card{
         width: 357px;
+    }
+
+    /* flag card  */
+    .flag-cards{
+        grid-template-columns: repeat(2, 1fr);
     }
     
     
